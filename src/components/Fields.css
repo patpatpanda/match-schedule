@@ -1,0 +1,103 @@
+.full-field {
+  background-color: #1b5e20; /* Mörk grön fotbollsplan */
+  width: 100%;
+  max-width: 1000px; /* Begränsa maxbredden */
+  height: auto;
+  position: relative;
+  border: 5px solid #fff; /* Vita linjer runt fotbollsplanen */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .full-field {
+    grid-template-columns: 1fr; /* En kolumn på mindre skärmar */
+    grid-template-rows: auto;
+  }
+}
+
+.football-plan {
+  background-color: #388e3c; /* En mörkare grön nyans för planerna */
+  border: 3px solid #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 300px; /* Öka höjden för att ge mer plats */
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .football-plan {
+    height: 250px; /* Minska höjden på mindre skärmar */
+  }
+}
+
+.football-plan h2 {
+  color: #fff;
+  margin: 0;
+  font-size: 2rem;
+  pointer-events: none;
+}
+
+.football-plan:hover {
+  transform: translateY(-10px); /* Lyft upp planen vid hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Lägg till skugga för en hover-effekt */
+}
+
+.schedule {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Mörk overlay vid hover */
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  font-size: 0.8rem;
+  overflow: hidden; /* Döljer eventuell överskjutande text */
+}
+
+.football-plan:hover .schedule {
+  opacity: 1; /* Schemat blir synligt vid hover */
+}
+
+.schedule h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.schedule p {
+  margin: 3px 0;
+  font-size: 0.8rem; /* Minska textstorleken något */
+  color: #eee; /* Mjukare vit för texten */
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .schedule {
+    font-size: 0.7rem; /* Minska textstorleken på mindre skärmar */
+  }
+
+  .schedule h3 {
+    font-size: 1rem;
+  }
+}
