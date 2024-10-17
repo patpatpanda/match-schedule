@@ -5,19 +5,29 @@
   border-radius: 8px;
   margin-bottom: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Centrera innehållet */
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .logo {
-  width: 80px; /* Gör logotypen mindre */
+  width: 80px;
   height: auto;
-  margin-bottom: 20px; /* Lägg till utrymme mellan logotypen och rubriken */
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .invitation h1 {
   color: #d9534f;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.invitation h2 {
+  color: #333;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .invitation p {
