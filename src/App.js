@@ -3,6 +3,7 @@ import TeamMatches from './components/TeamMatches';
 import Invitation from './components/Invitation';
 import './App.css';
 import Fields from './components/Fields';
+
 function App() {
   // AIK 1:s matcher
   const aik1Matches = [
@@ -67,10 +68,37 @@ function App() {
     { timeAndField: '14:55 - 15:25 (Plan 4)', opponent: 'Hammarby2016:1' }
   ];
 
+  // Hammarby2016:1:s matcher
+  const hammarby20161Matches = [
+    { timeAndField: '11:10 - 11:40 (Plan 1)', opponent: 'Boo 16:13:1' },
+    { timeAndField: '12:35 - 13:05 (Plan 3)', opponent: 'AIK 1' },
+    { timeAndField: '13:45 - 14:15 (Plan 1)', opponent: 'Boo 16:12:1' },
+    { timeAndField: '14:20 - 14:50 (Plan 4)', opponent: 'DIF2016' },
+    { timeAndField: '14:55 - 15:25 (Plan 1)', opponent: 'AIK 2' }
+  ];
+
+  // NackaFC:1:s matcher
+  const nackaFCMatches = [
+    { timeAndField: '10:35 - 11:05 (Plan 2)', opponent: 'Boo 16:13:2' },
+    { timeAndField: '12:00 - 12:30 (Plan 4)', opponent: 'AIK 1' },
+    { timeAndField: '13:10 - 13:40 (Plan 3)', opponent: 'Boo 2016:11' },
+    { timeAndField: '14:20 - 14:50 (Plan 1)', opponent: 'Boo 16:12:2' },
+    { timeAndField: '14:55 - 15:25 (Plan 2)', opponent: 'AIK 1' }
+  ];
+
+  // Boo 2016:11:s matcher
+  const boo201611Matches = [
+    { timeAndField: '10:35 - 11:05 (Plan 2)', opponent: 'DIF2016' },
+    { timeAndField: '11:10 - 11:40 (Plan 4)', opponent: 'Hammarby2016:1' },
+    { timeAndField: '12:00 - 12:30 (Plan 1)', opponent: 'AIK 1' },
+    { timeAndField: '13:10 - 13:40 (Plan 3)', opponent: 'Nacka FC' },
+    { timeAndField: '14:55 - 15:25 (Plan 1)', opponent: 'Boo 16:12:1' }
+  ];
+
   return (
     <div className="App">
       <Invitation />
- <h1>Fotbollsplaner</h1>
+      <h1>Fotbollsplaner</h1>
       <Fields />
       <h1>Matchschema</h1>
 
@@ -87,6 +115,8 @@ function App() {
       <TeamMatches teamName="Boo 16:12:2" matches={boo16122Matches} />
 
       {/* Sektion för Boo 16:13:1 */}
+     
+      {/* Sektion för Boo 16:13:1 */}
       <TeamMatches teamName="Boo 16:13:1" matches={boo16131Matches} />
 
       {/* Sektion för Boo 16:13:2 */}
@@ -94,6 +124,15 @@ function App() {
 
       {/* Sektion för DIF2016 */}
       <TeamMatches teamName="DIF2016" matches={dif2016Matches} />
+
+      {/* Sektion för Hammarby2016:1 */}
+      <TeamMatches teamName="Hammarby2016:1" matches={hammarby20161Matches} />
+
+      {/* Sektion för NackaFC:1 */}
+      <TeamMatches teamName="NackaFC:1" matches={nackaFCMatches} />
+
+      {/* Sektion för Boo 2016:11 */}
+      <TeamMatches teamName="Boo 2016:11" matches={boo201611Matches} />
     </div>
   );
 }

@@ -27,10 +27,9 @@ const Invitation = () => {
       <h2>Avgift</h2>
       <p>För att täcka kostnader för plan och domare tillkommer en symbolisk summa på 100 kr per lag.</p>
       
-      <h2>Anmälan</h2>
+      <h2>Cafeteria</h2>
       <p>
-        För att anmäla ert lag, vänligen bekräfta deltagandet senast [datum] genom att mejla Andreas Karlsson på <a href="mailto:andreas.karlsson@artslogistics.se">andreas.karlsson@artslogistics.se</a> eller skicka ett sms till +46734477577.
-        Vi ser fram emot er medverkan och hoppas på en fantastisk dag tillsammans!
+      Boo FF:s Cafeteria kommer vara öppen!
       </p>
       
       <p>Vänliga hälsningar,<br/>Boo FF P2016:12</p>
