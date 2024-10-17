@@ -58,7 +58,13 @@ function App() {
     { timeAndField: '14:55 - 15:25 (Plan 4)', opponent: 'BP2016:1' },
     { timeAndField: '13:10 - 13:40 (Plan 3)', opponent: 'Boo 16:12:1' }
   ];
-
+  const bp20161Matches = [
+    { timeAndField: '10:00 - 10:30 (Plan 1)', opponent: 'Boo 16:12:1' },
+    { timeAndField: '11:10 - 11:40 (Plan 2)', opponent: 'Boo 16:12:2' },
+    { timeAndField: '12:00 - 12:30 (Plan 3)', opponent: 'AIK 2' },
+    { timeAndField: '13:45 - 14:15 (Plan 3)', opponent: 'Boo 16:12:1' },
+    { timeAndField: '14:20 - 14:50 (Plan 4)', opponent: 'Boo 16:13:2' }
+  ];
   // DIF2016:s matcher
   const dif2016Matches = [
     { timeAndField: '10:35 - 11:05 (Plan 2)', opponent: 'Boo 16:12:1' },
@@ -121,7 +127,8 @@ function App() {
 
       {/* Sektion för Boo 16:13:2 */}
       <TeamMatches teamName="Boo 16:13:2" matches={boo16132Matches} />
-
+ {/* Sektion för BP2016:1 */}
+ <TeamMatches teamName="BP2016:1" matches={bp20161Matches} />
       {/* Sektion för DIF2016 */}
       <TeamMatches teamName="DIF2016" matches={dif2016Matches} />
 
