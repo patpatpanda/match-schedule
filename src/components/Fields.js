@@ -4,55 +4,43 @@ import './Fields.css';
 const Fields = () => {
   const [hoveredPlan, setHoveredPlan] = useState(null);
 
-  // Scheman för alla planer
+  // Uppdaterade scheman för alla 5 planer
   const schedules = {
     1: [
-      '10:00 - 10:30: Boo 16:12:1 vs BP2016:1',
-      '10:35 - 11:05: Boo 16:12:2 vs DIF2016',
-      '11:10 - 11:40: Boo 16:13:1 vs Hammarby2016:1',
-      '12:00 - 12:30: AIK 1 vs Boo 2016:11',
-      '12:35 - 13:05: AIK 2 vs Boo 16:13:2',
-      '13:10 - 13:40: AIK 1 vs BP2016:1',
-      '13:45 - 14:15: Boo 16:12:1 vs Hammarby2016:1',
-      '14:20 - 14:50: Boo 16:12:2 vs Nacka FC',
-      '14:55 - 15:25: AIK 2 vs Hammarby2016:1',
+      '10:00 - 10:30: Boo 16:12:1 vs DIF2016',
+      '10:50 - 11:20: Boo 16:12:1 vs Hammarby2016:1',
+      '11:30 - 12:00: Boo 16:12:2 vs Nacka FC',
+      '12:30 - 13:00: Boo 16:12:1 vs AIK 1',
+      '13:25 - 13:55: Boo 16:12:1 vs BP2016:1',
     ],
     2: [
-      '10:00 - 10:30: DIF2016 vs Boo 16:12:1',
-      '10:35 - 11:05: NackaFC:1 vs Boo 16:13:2',
-      '11:10 - 11:40: Boo 16:12:2 vs BP2016:1',
-      '12:00 - 12:30: AIK 2 vs DIF2016',
-      '12:35 - 13:05: AIK 1 vs Boo 16:13:1',
-      '13:10 - 13:40: Boo 2016:11 vs Hammarby2016:1',
-      '13:45 - 14:15: DIF2016 vs BP2016:1',
-      '14:20 - 14:50: AIK 2 vs Boo 16:13:1',
-      '14:55 - 15:25: AIK 1 vs NackaFC:1',
+      '10:00 - 10:30: Boo 16:12:2 vs BP2016:1',
+      '10:50 - 11:20: Boo 16:13:1 vs BP2016:1',
+      '12:30 - 13:00: Boo 16:12:2 vs AIK 2',
+      '13:10 - 13:40: Boo 16:12:2 vs AIK 1',
     ],
     3: [
-      '10:00 - 10:30: Boo 16:13:2 vs DIF2016',
-      '10:35 - 11:05: Boo 16:12:1 vs NackaFC:1',
-      '11:10 - 11:40: Boo 16:12:2 vs Boo 16:13:1',
-      '12:00 - 12:30: AIK 2 vs BP2016:1',
-      '12:35 - 13:05: AIK 1 vs Hammarby2016:1',
-      '13:10 - 13:40: Boo 2016:11 vs NackaFC:1',
-      '13:45 - 14:15: AIK 1 vs Boo 16:12:1',
-      '14:20 - 14:50: Boo 16:12:2 vs BP2016:1',
+      '10:00 - 10:30: Boo 16:13:1 vs Hammarby2016:1',
+      '11:30 - 12:00: DIF2016 vs Boo 16:13:2',
+      '12:30 - 13:00: Boo 16:13:1 vs DIF2016',
+      '13:50 - 14:20: AIK 1 vs Nacka FC',
     ],
     4: [
-      '10:00 - 10:30: Hammarby2016:1 vs NackaFC:1',
-      '10:35 - 11:05: DIF2016 vs Boo 16:12:2',
-      '11:10 - 11:40: BP2016:1 vs Boo 16:13:1',
-      '12:00 - 12:30: AIK 1 vs NackaFC:1',
-      '12:35 - 13:05: AIK 2 vs Boo 16:12:2',
-      '13:10 - 13:40: Boo 2016:11 vs Hammarby2016:1',
-      '13:45 - 14:15: AIK 2 vs DIF2016',
-      '14:20 - 14:50: Hammarby2016:1 vs DIF2016',
+      '10:30 - 11:00: Boo 16:13:2 vs Boo 2016:11',
+      '11:15 - 11:45: Boo 2016:11 vs Hammarby2016:1',
+      '13:15 - 13:45: Nacka FC vs Boo 16:13:2',
+    ],
+    5: [
+      '12:45 - 13:15: Boo 16:13:2 vs BP2016:1',
+      '13:20 - 13:50: AIK 2 vs Hammarby2016:1',
+      '14:00 - 14:30: DIF2016 vs Boo 2016:11',
+      '14:35 - 15:05: Hammarby2016:1 vs Boo 16:13:2',
     ],
   };
 
   return (
     <div className="full-field">
-      {[1, 2, 3, 4].map((plan) => (
+      {[1, 2, 3, 4, 5].map((plan) => (
         <div
           key={plan}
           className="football-plan"

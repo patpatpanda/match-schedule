@@ -1,8 +1,8 @@
 body {
-  font-family: 'Comic Sans MS', sans-serif; /* Mer lekfullt typsnitt */
+  font-family: 'Montserrat', sans-serif; /* Modernt och sportigt typsnitt */
   margin: 0;
   padding: 0;
-  background-color: #fffcf2; /* Mjuk gul bakgrund */
+  background-color: #f7f7f7; /* Neutral bakgrundsfärg */
 }
 
 .App {
@@ -12,31 +12,38 @@ body {
 }
 
 h1 {
-  color: #ff6347; /* Tomatröd färg */
-  font-size: 28px;
+  color: #007bff; /* Stark sportig blå */
+  font-size: 32px;
   text-align: center;
   margin-bottom: 40px;
-  text-shadow: 2px 2px #ffdab9; /* Mjuk skugga för lekfull effekt */
+  text-transform: uppercase; /* Ge en kraftfullare känsla */
+  text-shadow: 2px 2px #333; /* Mer markerad skugga för en kraftfull effekt */
+  font-weight: 700; /* Fetare för att ge styrka */
+  letter-spacing: 1.5px; /* Öka bokstavsavståndet */
 }
 
 .invitation {
-  background-color: #fff9c4; /* Ljusgul bakgrund */
-  border: 2px solid #ffd700; /* Gul kantlinje */
-  padding: 25px;
-  border-radius: 15px;
+  background-color: #f0f0f0; /* Mjukare grå för en ren och sportig look */
+  border: 2px solid #007bff; /* Skarp blå för energi */
+  padding: 30px;
+  border-radius: 10px;
   margin-bottom: 40px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Större skugga för djup */
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Tydligare skugga för djup */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .invitation:hover {
-  transform: scale(1.02); /* Liten zoom-effekt vid hover */
+  transform: scale(1.05); /* Dynamisk zoom vid hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Starkare skugga vid hover */
 }
 
 .invitation h1 {
-  color: #ff4500; /* Levande orange rubrik */
+  color: #007bff; /* Sportig blå rubrik */
   text-align: center;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
 }
 
 .invitation p {
@@ -50,92 +57,102 @@ h1 {
 }
 
 a {
-  color: #ff4500; /* Orange länkar */
+  color: #007bff; /* Blå länkar för sportig känsla */
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.2s ease-in-out;
 }
 
 a:hover {
+  color: #d9534f; /* Röd hover-effekt för energi */
   text-decoration: underline;
 }
 
 h2 {
-  color: #ff6347; /* Tomatröd färg */
-  font-size: 22px;
+  color: #007bff; /* Samma blå för enhetlig stil */
+  font-size: 26px;
   margin-bottom: 10px;
   text-align: center;
-  text-shadow: 1px 1px #ffdab9; /* Liten skugga för en rolig effekt */
+  text-transform: uppercase; /* Sportigare känsla */
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-shadow: 2px 2px #333; /* Starkare skugga */
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 40px;
-  background-color: #fff9c4; /* Ljusgul bakgrund */
-  border-radius: 10px; /* Mjukare hörn */
+  background-color: #f0f0f0; /* Ljusare grå för en sportig stil */
+  border-radius: 10px;
 }
 
 th, td {
   padding: 15px;
-  border: 2px solid #ffd700; /* Gul kantlinje */
-  text-align: center; /* Centrera text */
+  border: 2px solid #007bff; /* Stark blå kantlinje */
+  text-align: center;
   font-size: 1rem;
 }
 
 th {
-  background-color: #ffeb3b; /* Starkare gul för rubriker */
-  color: #333;
+  background-color: #007bff; /* Blå för rubriker */
+  color: white;
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #fff9c4; /* Ljus gul färg */
+  background-color: #e7e7e7; /* Ljus grå för varannan rad */
 }
 
 tr:hover {
-  background-color: #ffe082; /* Ljusare gul färg vid hover */
+  background-color: #cce5ff; /* Ljus blå vid hover */
 }
 
 .TeamMatches {
   margin-bottom: 40px;
   padding: 20px;
-  background-color: #ffecb3; /* Ljusare gul nyans */
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Mjukare skugga */
-  transition: transform 0.3s ease;
+  background-color: #e9ecef; /* Ljusgrå bakgrund för en fräsch look */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .TeamMatches:hover {
-  transform: scale(1.03); /* Zoomar in lite när man hovrar */
+  transform: scale(1.05); /* Sportig zoom-effekt vid hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Starkare skugga */
 }
 
 .TeamMatches h2 {
   margin-top: 0;
-  color: #ff4500; /* Levande orange rubrik */
+  color: #007bff;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
 }
 
 .TeamMatches table {
   width: 100%;
   margin-top: 10px;
-  border-radius: 10px; /* Rundade hörn för tabellen */
+  border-radius: 10px;
 }
 
 .TeamMatches th, .TeamMatches td {
   padding: 15px;
-  border: 2px solid #ffd700; /* Gul kantlinje */
+  border: 2px solid #007bff; /* Stark blå kantlinje */
   font-size: 1rem;
-  text-align: center; /* Centrera text */
+  text-align: center;
 }
 
 .TeamMatches th {
-  background-color: #ffeb3b; /* Starkare gul för rubriker */
+  background-color: #007bff;
+  color: white;
 }
 
 .TeamMatches tr:nth-child(even) {
-  background-color: #fff9c4; /* Ljus gul för varannan rad */
+  background-color: #e7e7e7; /* Ljus grå för varannan rad */
 }
 
 .TeamMatches tr:hover {
-  background-color: #ffe082; /* Ljusare gul vid hover */
+  background-color: #cce5ff; /* Ljus blå vid hover */
 }

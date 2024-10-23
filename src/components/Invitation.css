@@ -1,49 +1,53 @@
 .invitation {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
+  background-color: #f0f0f0; /* Mjuk grå för en sportig känsla */
+  border: 2px solid #007bff; /* Skarpare blå kant för energi */
+  padding: 30px; /* Mer utrymme för att göra det mer luftigt */
+  border-radius: 12px; /* Något rundare hörn */
   margin-bottom: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Tydligare skugga för djup */
+  text-align: center; /* Centrera innehållet */
+  font-family: 'Montserrat', sans-serif; /* Sportigt och modernt typsnitt */
+  transition: transform 0.3s ease-in-out; /* Smidig hover-effekt */
+}
+
+.invitation:hover {
+  transform: scale(1.05); /* Liten uppskalning vid hover för dynamik */
 }
 
 .logo {
-  width: 80px;
+  width: 100px; /* Gör logotypen lite större */
   height: auto;
-  display: block;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Lägg till en skugga för att göra logon mer framträdande */
 }
 
 .invitation h1 {
-  color: #d9534f;
+  color: #007bff; /* Stark blå färg för rubriken */
   text-align: center;
   margin-bottom: 20px;
-}
-
-.invitation h2 {
-  color: #333;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  text-transform: uppercase; /* Sportig känsla genom versaler */
+  letter-spacing: 2px; /* Öka avståndet mellan bokstäverna */
+  font-weight: 700; /* Tydligt och starkt typsnitt */
 }
 
 .invitation p {
-  line-height: 1.6;
-  color: #555;
+  line-height: 1.8;
+  color: #333; /* Tydligare och djärvare textfärg */
+  font-size: 1.1em; /* Något större textstorlek */
 }
 
 .invitation strong {
-  color: #333;
+  color: #000; /* Mörkare och tydligare färg för viktig text */
 }
 
 a {
-  color: #d9534f;
+  color: #007bff; /* Matcha länken med rubrikfärgen */
   text-decoration: none;
+  font-weight: 600; /* Länken blir mer framträdande */
+  transition: color 0.2s ease-in-out;
 }
 
 a:hover {
+  color: #d9534f; /* Röd vid hover för sportig energi */
   text-decoration: underline;
 }
