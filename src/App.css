@@ -1,158 +1,162 @@
 body {
-  font-family: 'Montserrat', sans-serif; /* Modernt och sportigt typsnitt */
+  font-family: 'Montserrat', sans-serif; /* Modern och sportig stil */
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7; /* Neutral bakgrundsfärg */
+  background-color: #1a1a1d; /* Mörk bakgrund för kontrast */
+  color: #f0f0f0; /* Ljus text för tydlighet */
 }
 
 .App {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
 h1 {
-  color: #007bff; /* Stark sportig blå */
-  font-size: 32px;
+  color: #00ff7f; /* Neongrön för att sticka ut */
+  font-size: 36px;
   text-align: center;
-  margin-bottom: 40px;
-  text-transform: uppercase; /* Ge en kraftfullare känsla */
-  text-shadow: 2px 2px #333; /* Mer markerad skugga för en kraftfull effekt */
-  font-weight: 700; /* Fetare för att ge styrka */
-  letter-spacing: 1.5px; /* Öka bokstavsavståndet */
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #333; /* Skugga för djup */
+  font-weight: 800; /* Tydlig och kraftfull stil */
+  letter-spacing: 2px;
 }
 
 .invitation {
-  background-color: #f0f0f0; /* Mjukare grå för en ren och sportig look */
-  border: 2px solid #007bff; /* Skarp blå för energi */
-  padding: 30px;
-  border-radius: 10px;
+  background-color: #222; /* Mörkare grå för ett djupare intryck */
+  border: 2px solid #00ff7f; /* Neongrön kant för modern stil */
+  padding: 40px;
+  border-radius: 15px;
   margin-bottom: 40px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Tydligare skugga för djup */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Mer distinkt skugga */
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .invitation:hover {
-  transform: scale(1.05); /* Dynamisk zoom vid hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Starkare skugga vid hover */
+  transform: scale(1.08); /* Starkare zoom-effekt */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .invitation h1 {
-  color: #007bff; /* Sportig blå rubrik */
+  color: #00ff7f;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-weight: 700;
+  letter-spacing: 2px;
+  font-weight: 800;
 }
 
 .invitation p {
   line-height: 1.8;
-  color: #444;
-  font-size: 1.1rem;
+  color: #ccc; /* Ljusare grå för tydlighet */
+  font-size: 1.2rem; /* Större text för läsbarhet */
 }
 
 .invitation strong {
-  color: #333;
+  color: #f0f0f0;
 }
 
 a {
-  color: #007bff; /* Blå länkar för sportig känsla */
+  color: #00ff7f;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-  color: #d9534f; /* Röd hover-effekt för energi */
+  color: #d9534f; /* Kontrastfärg vid hover */
   text-decoration: underline;
 }
 
 h2 {
-  color: #007bff; /* Samma blå för enhetlig stil */
-  font-size: 26px;
-  margin-bottom: 10px;
+  color: #ff6347; /* Varm orange för att sticka ut */
+  font-size: 28px;
+  margin-bottom: 20px;
   text-align: center;
-  text-transform: uppercase; /* Sportigare känsla */
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  text-shadow: 2px 2px #333; /* Starkare skugga */
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-weight: 800;
+  text-shadow: 3px 3px #000;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 40px;
-  background-color: #f0f0f0; /* Ljusare grå för en sportig stil */
-  border-radius: 10px;
+  background-color: #333; /* Mörkare bakgrund för tabellen */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 th, td {
-  padding: 15px;
-  border: 2px solid #007bff; /* Stark blå kantlinje */
+  padding: 20px;
+  border: 2px solid #00ff7f; /* Neongrön kantlinje */
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 th {
-  background-color: #007bff; /* Blå för rubriker */
-  color: white;
+  background-color: #444; /* Mörkare rubrik */
+  color: #fff; /* Vit text */
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #e7e7e7; /* Ljus grå för varannan rad */
+  background-color: #222; /* Mörkare grå för varannan rad */
 }
 
 tr:hover {
-  background-color: #cce5ff; /* Ljus blå vid hover */
+  background-color: #00ff7f; /* Neongrön vid hover */
+  color: #000; /* Mörk text vid hover */
 }
 
 .TeamMatches {
   margin-bottom: 40px;
-  padding: 20px;
-  background-color: #e9ecef; /* Ljusgrå bakgrund för en fräsch look */
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  background-color: #222;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .TeamMatches:hover {
-  transform: scale(1.05); /* Sportig zoom-effekt vid hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Starkare skugga */
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.37);
 }
 
 .TeamMatches h2 {
   margin-top: 0;
-  color: #007bff;
+  color: #ff6347;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-weight: 700;
+  letter-spacing: 1.8px;
+  font-weight: 800;
 }
 
 .TeamMatches table {
   width: 100%;
-  margin-top: 10px;
-  border-radius: 10px;
+  margin-top: 15px;
+  border-radius: 12px;
 }
 
 .TeamMatches th, .TeamMatches td {
-  padding: 15px;
-  border: 2px solid #007bff; /* Stark blå kantlinje */
-  font-size: 1rem;
+  padding: 20px;
+  border: 2px solid #00ff7f;
+  font-size: 1.1rem;
   text-align: center;
 }
 
 .TeamMatches th {
-  background-color: #007bff;
+  background-color: #444;
   color: white;
 }
 
 .TeamMatches tr:nth-child(even) {
-  background-color: #e7e7e7; /* Ljus grå för varannan rad */
+  background-color: #222;
 }
 
 .TeamMatches tr:hover {
-  background-color: #cce5ff; /* Ljus blå vid hover */
+  background-color: #6ae9a9;
+  color: #000;
 }
